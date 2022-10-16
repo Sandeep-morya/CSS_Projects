@@ -48,12 +48,7 @@ a {
   letter-spacing: 0.1em;
 
 }
-div:empty{
-    width: 80%;
-    margin: auto;
-    height: 10px;
-    border-top: 5px solid white;
-}
+
 ul li {
   font-size: 25px;
   list-style: none;
