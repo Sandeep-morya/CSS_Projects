@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      #box {
+        display: flex;
+        width: 50%;
+        height: 50vh;
+        aspect-ratio: 1;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+      }
+      div > div {
+        width: 30px;
+        height: 30px;
+        aspect-ratio: 1;
+        margin: 10px;
+        margin-top: 20vh;
+        animation: animate 0.6s linear infinite alternate-reverse;
+      }
+      @keyframes animate {
+        from {
+          margin-top: 20vh;
+          width: 30px;
+          height: 30px;
+        }
+        to {
+          margin-top: 35vh;
+          width: 10px;
+          height: 10px;
+        }
+      }
+
+      .one {
+        background: #00ff99;
+        animation-delay: 0s;
+      }
+      .two {
+        background: #00ccff;
+        animation-delay: 0.1s;
+      }
+      .three {
+        background: #9933ff;
+        animation-delay: 0.2s;
+      }
+      .four {
+        background: #ff6666;
+        animation-delay: 0.3s;
+      }
+      .five {
+        background: #fff35c;
+        animation-delay: 0.4s;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+      <div class="four"></div>
+      <div class="five"></div>
+    </div>
+  </body>
+</html>
